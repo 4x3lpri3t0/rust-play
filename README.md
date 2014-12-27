@@ -8,9 +8,11 @@ A playground for the Rust systems programming language
 
 ```shell
 $ cd ~/projects
-$ cargo new guessing_game --bin
-$ cd guessing_game
+$ cargo new [project_name] --bin
+$ cd [project_name]
 ```
+
+--bin flag, since we're making a binary, rather than a library.
 
 ----
 
