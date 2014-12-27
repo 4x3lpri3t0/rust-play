@@ -1,12 +1,10 @@
-rust-play
-=========
+# rust-play
 
 A playground for the Rust systems programming language
 
 ----
 
-Setting up a new project with Cargo
-===================================
+### Setting up a new project with Cargo
 
 ```shell
 $ cd ~/projects
@@ -16,14 +14,13 @@ $ cd guessing_game
 
 ----
 
-Bash Aliases
-============
+### Bash Aliases
 
 (This has nothing to do with Rust)
 
-This goes on: "C:\Users\<user>\.bashrc"
+This goes on: "C:\Users\\<user>\\.bashrc"
 
-<code>
+```shell
 alias ls='ls -F --color --show-control-chars'
 
 alias gs='git status'
@@ -33,4 +30,4 @@ alias gc='git commit -m '
 
 alias pl='git pull -r'
 alias ps='git push origin master'
-</code>
+```
