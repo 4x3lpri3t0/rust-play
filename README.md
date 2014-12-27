@@ -18,7 +18,7 @@ $ cd guessing_game
 
 (This has nothing to do with Rust)
 
-This goes on: "C:\Users\\<user>\\.bashrc"
+This goes on: "C:\Users\\[user]\\.bashrc"
 
 ```shell
 alias ls='ls -F --color --show-control-chars'
