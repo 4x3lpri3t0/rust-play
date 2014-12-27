@@ -12,9 +12,11 @@ $ cargo new [project_name] --bin
 $ cd [project_name]
 ```
 
-`--bin` flag, since we're making a binary, rather than a library.
+* `--bin` flag, since we're making a binary, rather than a library.
 
-`cargo run` is kind of like `cargo build`, but it also then runs the produced executable.
+* `cargo run` is kind of like `cargo build`, but it also then runs the produced executable.
+
+* You can run all of your tests with `cargo test`
 
 ----
 
