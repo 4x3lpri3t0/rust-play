@@ -4,11 +4,11 @@ fn main() {
 
     println!("The origin is at ({}, {})", origin.x, origin.y);
 
-    let mut mutablePoint = { x: 0i, y: 0i };
+    let mut mutable_point = Point { x: 0i, y: 0i };
 
-    point.x = 5;
+    mutable_point.x = 5;
 
-    println!("The point is at ({}, {})", mutablePoint.x, mutablePoint.y);
+    println!("The point is at ({}, {})", mutable_point.x, mutable_point.y);
 }
 
 // structs begin with a capital letter and are also camel cased: PointInSpace
