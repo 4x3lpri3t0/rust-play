@@ -77,3 +77,18 @@ fn name(x: &int) -> &int {
     // privilege 3: you may lend that resource to a single borrower (mutably)
     let o = &mut x;
 }
+
+// LIFETIMES
+
+fn add_one<'a>(num: &'a int) -> int {
+    *num + 1
+}
+
+// fn add_one<'a>(...)
+// This part declares our lifetimes. This says that add_one has one lifetime, 'a.
+
+// Then in our parameter list, we use the lifetimes we've named:
+// ...(num: &'a int) -> ...
+
+// We read &int as "a reference to an int" and
+// &'a int as "a reference to an int with the lifetime 'a.'"
