@@ -37,7 +37,7 @@ alias gc='git commit -m '
 alias pl='git pull -r'
 alias ps='git push origin master'
 
-alias yolo='git commit -am "minor changes" && git push origin master'
+alias yolo='git add -A . && git commit -m "minor changes" && git push origin master'
 ```
 
 ----
