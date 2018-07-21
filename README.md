@@ -1,6 +1,6 @@
 # rust-play
 
-A playground for the Rust systems programming language
+A playground for the Rust systems programming language and some other personal stuff that I store here for some reason.
 
 ----
 
@@ -21,8 +21,6 @@ $ cd [project_name]
 ----
 
 ### Bash Aliases
-
-(This has nothing to do with Rust)
 
 This goes on: "C:\Users\\[user]\\.bashrc"
 
@@ -46,4 +44,14 @@ alias yolo='git add -A . && git commit -m "minor changes" && git push origin mas
 
 ```shell
 git remote set-url origin git@github.com:username/repo.git
+```
+
+----
+
+### Add shortcut (on Windows) to automate going to git repo manually
+
+1) Run `C:\Users\Axel\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+2) Create shortcut with Target:
+```shell
+C:\Programs\Git\git-bash.exe --cd="C:\Users\Axel\Desktop\algorithms-java" -c "yolo;echo -e '\e[1m--------------------';pl;echo -e '-------------------\e[22m-';yolo;echo -e '\e[32m*** Happy Coding! ***';exec $SHELL"
 ```
