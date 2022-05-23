@@ -33,7 +33,7 @@ alias gaa='git add -A'
 alias gc='git commit -m '
 
 alias pl='git pull -r'
-alias ps='git push origin master'
+alias ps='git push'
 
 alias yolo='git add -A . && git commit -m "Daily programming practice" && git push'
 ```
