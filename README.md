@@ -22,7 +22,7 @@ $ cd [project_name]
 
 ### Bash Aliases
 
-This goes on: "C:\Users\\[user]\\.bashrc"
+My `.bashrc` file. Lives in: "C:\Users\\[user]\\.bashrc"
 
 ```shell
 alias ls='ls -F --color --show-control-chars'
@@ -30,12 +30,25 @@ alias ls='ls -F --color --show-control-chars'
 alias gs='git status'
 alias ga='git add '
 alias gaa='git add -A'
-alias gc='git commit -m '
+commitPush() { gc commit -m "$1" && git push; }
+alias gc=commitPush
+
+# Careful! Will remove unpushed commits as well
+alias reset='git reset --hard origin/main && git clean -fd'
 
 alias pl='git pull -r'
-alias ps='git push'
+alias push='git push'
 
+# For CP :)
 alias yolo='git add -A . && git commit -m "Daily programming practice" && git push'
+
+# K8s
+source <(kubectl completion bash)
+alias k='kubectl'
+complete -F __start_kubectl k
+
+# Unity
+alias gounity='cd "C:\Users\priet\unity-projects"'
 ```
 
 ----
