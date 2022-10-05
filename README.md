@@ -30,7 +30,7 @@ alias ls='ls -F --color --show-control-chars'
 alias gs='git status'
 alias ga='git add '
 alias gaa='git add -A'
-commitPush() { gc commit -m "$1" && git push; }
+commitPush() { git commit -m "$1" && git push; }
 alias gc=commitPush
 
 # Careful! Will remove unpushed commits as well
